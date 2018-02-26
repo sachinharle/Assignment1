@@ -12,6 +12,7 @@ tot=0
 unaln=0
 for line in i :
     p = re.compile(r'\w+')
+    #readStart ==position-> aligned
     if p.findall(line)[2] != p.findall(line)[6] :
         unaln += 1
     tot += 1
