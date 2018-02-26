@@ -6,7 +6,7 @@ With a uniform error rate of 0.01 (1% of the time a base is randomly replaced wi
 python3 NGSreadsimulator.py NC_000021.fasta out.fastq
 -x-
 Aligning the resulting fastq file with bwa
-#  bwa commands.
+  bwa commands.
 bwa index NC_000021.fasta
 bwa aln NC_000021.fasta out.fastq > aln.sai
 bwa samse NC_000021.fasta aln.sai out.fastq > chr21.sam
