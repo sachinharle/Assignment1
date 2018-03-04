@@ -13,5 +13,5 @@ bwa samse NC_000021.fasta aln.sai out.fastq > chr21.sam
 finding the error rate
 (read aligned to a part of the genome other than where it originated from)
 -> Run errorRateCal.py with:
-python3 errorRateCal.py chr22.sam <-
+python3 errorRateCal.py chr21.sam <-
 -x-x-
