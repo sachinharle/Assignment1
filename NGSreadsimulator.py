@@ -55,7 +55,7 @@ with open(outFile,'w') as o:
         #a uniform error rate of 0.01
         seqRead = mutSeq(genome[readStart:readEnd])
         #print(genome[readStart:readEnd])
-        o.write("@SEQ_ID:"+str(chr_name)+":"+str(readStart)+":"+str(readEnd)+"\n")
+        o.write("@SEQ_ID:"+str(chr_name)+":"+str(readStart+1)+":"+str(readEnd)+"\n")
         o.write(str(seqRead)+"\n")
         o.write("+\n")
         o.write(str(seqDummyVal(readLength+1))+"\n")
