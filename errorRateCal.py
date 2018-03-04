@@ -5,11 +5,11 @@ finding the error rate (read aligned to a part of the genome other than where it
 -> Run errorRateCal.py with:
 python3 errorRateCal.py chr22.sam <-
 '''
+tot=unaln=-1
 inFile = sys.argv[1]
 i = open(inFile,'r')
 next(i)
-tot=0
-unaln=0
+
 for line in i :
     p = re.compile(r'\w+')
     #readStart ==position-> aligned
