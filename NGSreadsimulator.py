@@ -58,4 +58,4 @@ with open(outFile,'w') as o:
         o.write("@SEQ_ID:"+str(chr_name)+":"+str(readStart)+":"+str(readEnd)+"\n")
         o.write(str(seqRead)+"\n")
         o.write("+\n")
-        o.write(str(seqDummyVal(readLength))+"\n")
+        o.write(str(seqDummyVal(readLength+1))+"\n")
